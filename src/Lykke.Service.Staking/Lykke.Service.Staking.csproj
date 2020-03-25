@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Dockerfile">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lykke.Sdk" Version="5.17.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.13.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\client\Lykke.Service.Staking.Client\Lykke.Service.Staking.Client.csproj" />
+    <ProjectReference Include="..\Lykke.Service.Staking.MsSqlRepositories\Lykke.Service.Staking.MsSqlRepositories.csproj" />
+    <ProjectReference Include="..\Lykke.Service.Staking.Domain\Lykke.Service.Staking.Domain.csproj" />
+    <ProjectReference Include="..\Lykke.Service.Staking.DomainServices\Lykke.Service.Staking.DomainServices.csproj" />
+  </ItemGroup>
+</Project>

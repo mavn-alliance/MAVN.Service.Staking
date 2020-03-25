@@ -1,0 +1,75 @@
+StakingService:
+  Db:
+    LogsConnString:
+      settings-key: StakingService-LogsConnString
+      types:
+        - AzureTableStorage
+    DataConnString:
+      settings-key: StakingService-DataConnString
+  RabbitMq:
+    RabbitMqConnectionString:
+      settings-key: WalletManagementRabbitMQ
+      types:
+        - RabbitMq
+    NotificationRabbitMqConnectionString:
+      settings-key: NotificationSystemRabbitMQ
+      types:
+        - RabbitMq
+StakingJob:
+  Db:
+    LogsConnString:
+      settings-key: StakingService-LogsConnString
+      types:
+        - AzureTableStorage
+    DataConnString:
+      settings-key: StakingService-DataConnString
+  RabbitMq:
+    RabbitMqConnectionString:
+      settings-key: WalletManagementRabbitMQ
+      types:
+        - RabbitMq
+    NotificationRabbitMqConnectionString:
+      settings-key: NotificationSystemRabbitMQ
+      types:
+        - RabbitMq
+  IdlePeriod:
+    settings-key: StakingJob-IdlePeriod
+MasterWalletAddress:
+  settings-key: StakingService-MasterWalletAddress
+TokenContractAddress:
+  settings-key: PrivateBlockchain-TokenContractAddress
+Notifications:
+  PushNotifications:
+    ReferralStakeWarningTemplateId:
+      settings-key: StakingService-Notifications-PushNotifications-ReferralStakeWarningTemplateId
+WalletManagementService:
+  ServiceUrl:
+    settings-key: WalletManagementServiceUrl
+PrivateBlockchainFacadeService:
+  ServiceUrl:
+    settings-key: PrivateBlockchainFacadeServiceUrl
+CampaignService:
+  ServiceUrl:
+    settings-key: CampaignServiceUrl
+CustomerProfileService:
+  ServiceUrl:
+    settings-key: CustomerProfileServiceUrl
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+        - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
+MonitoringServiceClient:
+  MonitoringServiceUrl:
+    settings-key: MonitoringServiceUrl
+Constants:
+    TokenFormatCultureInfo:
+        settings-key: Constant-TokenFormatCultureInfo
+    TokenNumberDecimalPlaces:
+        settings-key: Constant-TokenNumberDecimalPlaces
+    TokenIntegerPartFormat:
+        settings-key: Constant-TokenIntegerPartFormat
+
