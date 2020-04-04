@@ -20,7 +20,7 @@ namespace MAVN.Service.Staking.MsSqlRepositories.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lykke.Service.Staking.MsSqlRepositories.Entities.ReferralStakeEntity", b =>
+            modelBuilder.Entity("MAVN.Service.Staking.MsSqlRepositories.Entities.ReferralStakeEntity", b =>
                 {
                     b.Property<string>("ReferralId")
                         .ValueGeneratedOnAdd()
@@ -64,7 +64,7 @@ namespace MAVN.Service.Staking.MsSqlRepositories.Migrations
                     b.ToTable("referral_stakes");
                 });
 
-            modelBuilder.Entity("Lykke.Service.Staking.MsSqlRepositories.Entities.StakesBlockchainEntity", b =>
+            modelBuilder.Entity("MAVN.Service.Staking.MsSqlRepositories.Entities.StakesBlockchainEntity", b =>
                 {
                     b.Property<string>("StakeId")
                         .ValueGeneratedOnAdd()
