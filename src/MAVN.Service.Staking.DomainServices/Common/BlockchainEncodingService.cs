@@ -1,5 +1,5 @@
-using Falcon.Numerics;
-using Lykke.PrivateBlockchain.Definitions;
+﻿using Falcon.Numerics;
+using MAVN.PrivateBlockchain.Definitions;
 using MAVN.Service.Staking.Domain.Services;
 using Nethereum.ABI.FunctionEncoding;
 using Nethereum.Contracts;
