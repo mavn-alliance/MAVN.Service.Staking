@@ -1,9 +1,9 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using Lykke.Sdk;
-using Lykke.Service.Campaign.Client;
-using Lykke.Service.CustomerProfile.Client;
-using Lykke.Service.PrivateBlockchainFacade.Client;
+using MAVN.Service.Campaign.Client;
+using MAVN.Service.CustomerProfile.Client;
+using MAVN.Service.PrivateBlockchainFacade.Client;
 using MAVN.Service.Staking.Domain.RabbitMq.Handlers;
 using MAVN.Service.Staking.Domain.Services;
 using MAVN.Service.Staking.DomainServices.Common;
@@ -11,7 +11,7 @@ using MAVN.Service.Staking.DomainServices.RabbitMq.Handlers;
 using MAVN.Service.Staking.DomainServices.Services;
 using MAVN.Service.Staking.Services;
 using MAVN.Service.Staking.Settings;
-using Lykke.Service.WalletManagement.Client;
+using MAVN.Service.WalletManagement.Client;
 using Lykke.SettingsReader;
 
 namespace MAVN.Service.Staking.Modules

@@ -1,5 +1,5 @@
 using System;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using MAVN.Service.Staking.Domain.Enums;
 
 namespace MAVN.Service.Staking.Domain.Models

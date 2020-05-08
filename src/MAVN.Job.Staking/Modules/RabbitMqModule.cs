@@ -1,10 +1,10 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using Lykke.Common;
 using Lykke.Job.Staking.Settings;
 using Lykke.Job.Staking.Settings.JobSettings;
 using Lykke.RabbitMqBroker.Publisher;
-using Lykke.Service.NotificationSystem.SubscriberContract;
+using MAVN.Service.NotificationSystem.SubscriberContract;
 using MAVN.Service.Staking.Contract.Events;
 using MAVN.Service.Staking.DomainServices.RabbitMq.Subscribers;
 using Lykke.SettingsReader;
