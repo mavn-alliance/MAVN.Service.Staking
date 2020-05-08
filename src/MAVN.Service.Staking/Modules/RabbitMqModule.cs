@@ -1,10 +1,10 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using Lykke.RabbitMqBroker.Publisher;
 using Lykke.RabbitMqBroker.Subscriber;
-using Lykke.Service.CustomerProfile.Contract;
-using Lykke.Service.NotificationSystem.SubscriberContract;
-using Lykke.Service.PrivateBlockchainFacade.Contract.Events;
+using MAVN.Service.CustomerProfile.Contract;
+using MAVN.Service.NotificationSystem.SubscriberContract;
+using MAVN.Service.PrivateBlockchainFacade.Contract.Events;
 using MAVN.Service.Staking.Contract.Events;
 using MAVN.Service.Staking.DomainServices.RabbitMq.Subscribers;
 using MAVN.Service.Staking.Settings;

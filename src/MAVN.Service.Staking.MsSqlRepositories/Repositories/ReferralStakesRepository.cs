@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using Lykke.Common.MsSql;
 using MAVN.Service.Staking.Domain.Enums;
 using MAVN.Service.Staking.Domain.Models;

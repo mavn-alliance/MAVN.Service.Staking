@@ -1,10 +1,10 @@
-using Lykke.Job.Staking.Settings.JobSettings;
+﻿using Lykke.Job.Staking.Settings.JobSettings;
 using Lykke.Job.Staking.Settings.Notifications;
 using Lykke.Sdk.Settings;
-using Lykke.Service.Campaign.Client;
-using Lykke.Service.CustomerProfile.Client;
-using Lykke.Service.PrivateBlockchainFacade.Client;
-using Lykke.Service.WalletManagement.Client;
+using MAVN.Service.Campaign.Client;
+using MAVN.Service.CustomerProfile.Client;
+using MAVN.Service.PrivateBlockchainFacade.Client;
+using MAVN.Service.WalletManagement.Client;
 
 namespace Lykke.Job.Staking.Settings
 {

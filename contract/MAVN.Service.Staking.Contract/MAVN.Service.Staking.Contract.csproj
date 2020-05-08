@@ -5,6 +5,6 @@
     <Version>1.0.0</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Falcon.Numerics" Version="0.1.1" />
+    <PackageReference Include="MAVN.Numerics" Version="1.0.0" />
   </ItemGroup>
 </Project>

@@ -1,5 +1,5 @@
 using System.Globalization;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using MAVN.Service.Staking.Domain.Services;
 
 namespace MAVN.Service.Staking.DomainServices.Services

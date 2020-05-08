@@ -1,17 +1,17 @@
-using System;
+﻿using System;
 using System.Threading.Tasks;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using Lykke.Common.MsSql;
 using Lykke.RabbitMqBroker.Publisher;
-using Lykke.Service.PrivateBlockchainFacade.Client;
-using Lykke.Service.PrivateBlockchainFacade.Client.Models;
+using MAVN.Service.PrivateBlockchainFacade.Client;
+using MAVN.Service.PrivateBlockchainFacade.Client.Models;
 using MAVN.Service.Staking.Contract.Events;
 using MAVN.Service.Staking.Domain.Enums;
 using MAVN.Service.Staking.Domain.Models;
 using MAVN.Service.Staking.Domain.Repositories;
 using MAVN.Service.Staking.Domain.Services;
-using Lykke.Service.WalletManagement.Client;
-using Lykke.Service.WalletManagement.Client.Enums;
+using MAVN.Service.WalletManagement.Client;
+using MAVN.Service.WalletManagement.Client.Enums;
 
 namespace MAVN.Service.Staking.DomainServices.Services
 {
