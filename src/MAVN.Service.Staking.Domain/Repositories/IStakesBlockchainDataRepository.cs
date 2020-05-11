@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.Staking.Domain.Models;
 
 namespace MAVN.Service.Staking.Domain.Repositories
