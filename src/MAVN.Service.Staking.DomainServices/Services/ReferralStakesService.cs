@@ -5,7 +5,7 @@ using Common.Log;
 using MAVN.Numerics;
 using Lykke.Common;
 using Lykke.Common.Log;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using Lykke.RabbitMqBroker.Publisher;
 using MAVN.Service.Campaign.Client;
 using MAVN.Service.Campaign.Client.Models.Enums;

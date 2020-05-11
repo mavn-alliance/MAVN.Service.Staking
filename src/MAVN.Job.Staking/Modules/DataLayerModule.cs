@@ -1,6 +1,6 @@
 using Autofac;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using Lykke.Job.Staking.Settings;
 using Lykke.Job.Staking.Settings.JobSettings;
 using MAVN.Service.Staking.Domain.Repositories;

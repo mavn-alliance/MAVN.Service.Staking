@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using Lykke.Logs;
 using Lykke.RabbitMqBroker.Publisher;
 using MAVN.Service.Campaign.Client;

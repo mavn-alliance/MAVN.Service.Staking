@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MAVN.Numerics;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.Staking.Domain.Enums;
 using MAVN.Service.Staking.Domain.Models;
 

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using Lykke.RabbitMqBroker.Publisher;
 using MAVN.Service.PrivateBlockchainFacade.Client;
 using MAVN.Service.PrivateBlockchainFacade.Client.Models;
