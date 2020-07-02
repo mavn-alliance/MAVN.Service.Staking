@@ -1,5 +1,5 @@
-using System.Threading.Tasks;
-using MAVN.Common.MsSql;
+﻿using System.Threading.Tasks;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Staking.Domain.Models;
 using MAVN.Service.Staking.Domain.Repositories;
 using MAVN.Service.Staking.MsSqlRepositories.Entities;
@@ -9,9 +9,9 @@ namespace MAVN.Service.Staking.MsSqlRepositories.Repositories
 {
     public class StakesBlockchainDataRepository : IStakesBlockchainDataRepository
     {
-        private readonly MsSqlContextFactory<StakingContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<StakingContext> _contextFactory;
 
-        public StakesBlockchainDataRepository(MsSqlContextFactory<StakingContext> contextFactory)
+        public StakesBlockchainDataRepository(PostgreSQLContextFactory<StakingContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

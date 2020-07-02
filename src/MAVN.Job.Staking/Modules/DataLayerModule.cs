@@ -1,12 +1,12 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
 using Lykke.Job.Staking.Settings;
 using Lykke.Job.Staking.Settings.JobSettings;
 using MAVN.Service.Staking.Domain.Repositories;
 using MAVN.Service.Staking.MsSqlRepositories;
 using MAVN.Service.Staking.MsSqlRepositories.Repositories;
 using Lykke.SettingsReader;
+using MAVN.Persistence.PostgreSQL.Legacy;
 
 namespace Lykke.Job.Staking.Modules
 {
@@ -22,7 +22,7 @@ namespace Lykke.Job.Staking.Modules
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _settings.DataConnString,
                 connString => new StakingContext(connString, false),
                 dbConn => new StakingContext(dbConn));

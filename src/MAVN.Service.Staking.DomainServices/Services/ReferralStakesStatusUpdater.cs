@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using MAVN.Numerics;
-using MAVN.Common.MsSql;
 using Lykke.RabbitMqBroker.Publisher;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.PrivateBlockchainFacade.Client;
 using MAVN.Service.PrivateBlockchainFacade.Client.Models;
 using MAVN.Service.Staking.Contract.Events;
