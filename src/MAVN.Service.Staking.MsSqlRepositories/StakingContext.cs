@@ -1,11 +1,11 @@
-using System.Data.Common;
-using MAVN.Common.MsSql;
+﻿using System.Data.Common;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Staking.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.Staking.MsSqlRepositories
 {
-    public class StakingContext : MsSqlContext
+    public class StakingContext : PostgreSQLContext
     {
         private const string Schema = "staking";
 
@@ -29,7 +29,7 @@ namespace MAVN.Service.Staking.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
         }
     }

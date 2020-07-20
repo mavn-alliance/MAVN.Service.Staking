@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MAVN.Numerics;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Staking.Domain.Enums;
 using MAVN.Service.Staking.Domain.Models;
 using MAVN.Service.Staking.Domain.Repositories;
@@ -32,9 +32,9 @@ namespace MAVN.Service.Staking.MsSqlRepositories.Repositories
                 IsWarningSent = s.IsWarningSent,
             };
 
-        private readonly MsSqlContextFactory<StakingContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<StakingContext> _contextFactory;
 
-        public ReferralStakesRepository(MsSqlContextFactory<StakingContext> contextFactory)
+        public ReferralStakesRepository(PostgreSQLContextFactory<StakingContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

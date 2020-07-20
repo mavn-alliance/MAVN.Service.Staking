@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MAVN.Common.MsSql;
 using Lykke.Logs;
 using Lykke.RabbitMqBroker.Publisher;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.Campaign.Client;
 using MAVN.Service.Campaign.Client.Models.Campaign.Responses;
 using MAVN.Service.Campaign.Client.Models.Enums;
